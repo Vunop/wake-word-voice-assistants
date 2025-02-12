@@ -16,10 +16,10 @@ jobs:
     uses: esphome/workflows/.github/workflows/build.yml@2025.1.0
     with:
       files: |
-        esp32-s3-box/esp32-s3-box.factory.yaml
-        esp32-s3-box-lite/esp32-s3-box-lite.factory.yaml
-        esp32-s3-box-3/esp32-s3-box-3.factory.yaml
-        m5stack-atom-echo/m5stack-atom-echo.factory.yaml
+         esp32-s3-box-3/esp32-s3-box-3.factory.yaml
+      #  esp32-s3-box/esp32-s3-box.factory.yaml
+  #      esp32-s3-box-lite/esp32-s3-box-lite.factory.yaml
+   #     m5stack-atom-echo/m5stack-atom-echo.factory.yaml
       esphome-version: 2024.11.1
       release-summary: ${{ github.event_name == 'release' && github.event.release.body || '' }}
       release-url: ${{ github.event_name == 'release' && github.event.release.html_url || '' }}

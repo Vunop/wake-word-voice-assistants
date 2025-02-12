@@ -154,7 +154,7 @@ speaker:
 
 micro_wake_word:
   models:
-    - https://github.com/Vunop/mww-zabka/raw/main/zabka.json
+    - https://github.com/Vunop/mww-zabka/raw/main/alexa.json
   on_wake_word_detected:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
